@@ -86,7 +86,7 @@ public class Account {
 
     if (amount <= 0) {
       // Ako je isplata manja ili jednaka 0KM, baca se iznimka
-      throw new AmountWithdrawException("Isplata mora biti veća od 0KM.");
+      throw new AmountWithdrawException("Isplata mora biti veca od 0KM.");
     } else if (amount > getBalance()) {
       // Ako je isplata veća od stanja na računu, baca se iznimka
       throw new AmountWithdrawException("Nemate dovoljno sredstava na racunu za ovu isplatu.");

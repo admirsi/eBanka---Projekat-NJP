@@ -21,7 +21,7 @@ public class Authenticator {
     // Provjera da li je korisnik pronađen
     if (customer == null) {
       // Ako korisnik nije pronađen, baca se iznimka
-      throw new LoginException("Korisnik nije pronađen");
+      throw new LoginException("Korisnik nije pronadjen");
     }
 
     // Provjera da li je lozinka ispravna
@@ -34,7 +34,7 @@ public class Authenticator {
 
     // Ako je lozinka netočna, baca se iznimka
     else
-      throw new LoginException("Netačna lozinka");
+      throw new LoginException("Netacna lozinka");
   }
 
   // Metoda za odjavu korisnika
