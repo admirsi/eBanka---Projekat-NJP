@@ -25,7 +25,6 @@ public class Customer {
   // Korisnik se odjavljuje prilikom odjave
   // Korisnik se može odjaviti samo ako je prijavljen
   // Korisnik se može prijaviti samo ako je unesen ispravno korisničko ime i lozinka
-  
   public Customer(int id, String name, String username, String password, int accountId) {
     // Postavljanje atributa
     // Poziv metoda za postavljanje atributa

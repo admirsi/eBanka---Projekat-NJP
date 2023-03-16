@@ -25,7 +25,7 @@ public class Menu {
     // Kreiranje objekta klase Scanner
     menu.scanner = new Scanner(System.in);
 
-    // Poziv metode za prijavu korisnika
+    // Poziv metode za autenticiranje korisnika
     Customer customer = menu.authenticateUser();
 
     // Provjera da li je korisnik autenticiran
@@ -67,7 +67,7 @@ public class Menu {
     // Dohvaćanje lozinke
     String password = scanner.next();
 
-    // Kreiranje objekta klase Custome
+    // Kreiranje objekta klase Customer
     // Setovanje Korisnika na null
     Customer customer = null;
     try {
@@ -88,7 +88,6 @@ public class Menu {
 
   // Metoda za prikaz menija
   // Metoda prima korisnika i račun
-  // Metoda prikazuje meni
   private void showMenu(Customer customer, Account account) {
 
     // Inicijalizacija varijable za odabir opcije
@@ -99,8 +98,7 @@ public class Menu {
     System.out.println(" ");
     System.out.println("Dobrodosli " + customer.getName() + "!"); // Dobrodošao korisniče, ime i prezime!
 
-    // Prikaz menija dok korisnik nije odjavljen i dok je odabir opcije različit od
-    // 4
+    // Prikaz menija dok korisnik nije odjavljen i dok je odabir opcije različit od 4
     while (selection != 4 && customer.isAuthenticated()) {
       System.out.println("************************************************");
       System.out.println(" ");
