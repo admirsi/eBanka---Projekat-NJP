@@ -100,15 +100,15 @@ public class Menu {
 
     // Prikaz menija dok korisnik nije odjavljen i dok je odabir opcije različit od 4
     while (selection != 4 && customer.isAuthenticated()) {
-      System.out.println("************************************************");
+      System.out.println("************************************************************");
       System.out.println(" ");
-      System.out.println("================================================");
+      System.out.println("============================================================");
       System.out.println("Molimo odaberite jednu od opcija, unesite broj za uslugu:");
       System.out.println("1: Uplata novca");
       System.out.println("2: Isplata novca");
       System.out.println("3: Provjera stanja racuna");
       System.out.println("4: Izlaz iz aplikacije");
-      System.out.println("================================================");
+      System.out.println("============================================================");
 
       // Dohvaćanje odabira opcije
       selection = scanner.nextInt();
@@ -166,7 +166,7 @@ public class Menu {
         // Pogrešan unos
         default:
           // Ispis poruke
-          System.out.println("Pogresan unos. Molimo pokusajte ponovo.");
+          System.out.println("Pogresana opcija. Molimo pokusajte ponovo.");
           break;
       }
     }
