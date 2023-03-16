@@ -28,7 +28,6 @@ public class Customer {
   public Customer(int id, String name, String username, String password, int accountId) {
     // Postavljanje atributa
     // Poziv metoda za postavljanje atributa
-
     // Postavljanje id-a korisnika
     setId(id);
     // Postavljanje imena korisnika

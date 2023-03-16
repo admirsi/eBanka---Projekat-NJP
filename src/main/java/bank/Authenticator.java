@@ -11,7 +11,7 @@ public class Authenticator {
   // Metoda za autenticiranje korisnika
   // Metoda prima korisničko ime i lozinku
   // Metoda vraća korisnika ako je autenticiran
-  // Metoda baca iznimku ako korisnik nije pronađen ili je lozinka netočna
+  // Metoda baca iznimku ako korisnik nije pronađen ili je lozinka netačna
   
   // Metoda za prijavu korisnika
   public static Customer login(String username, String password) throws LoginException {
@@ -32,7 +32,7 @@ public class Authenticator {
       return customer;
     }
 
-    // Ako je lozinka netočna, baca se iznimka
+    // Ako je lozinka netačna, baca se iznimka
     else
       throw new LoginException("Netacna lozinka");
   }
